@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="assets/img/ikonica.ico" />
+            <meta name="author" content="Marko Dasic" />
+            <meta name="description" content="Dobro dosli u destileriju Dasic, pice po vasem ukusu i nasem receptu" />
+            <meta name="keywords" content="destilerija,viski,rakija,rum,alkohol,dasic" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="assets/css/style.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/css/responsive.css" type="text/css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <title>Destilerija Dasic - Proizvodi</title>
+    </head>
+    <body>
+        <section class="container-fluid justify-content-center nevidljivo" id="zavrsnaKupovina">
+            <div id="senka" class="nevidljivo"></div>
+            <div id="forma"  class="p-2">
+                <div id="iksic"><i class="fas fa-times relative"></i></div>     
+                <form >
+                    <div class="col-12 d-flex justify-content-center"><p>Ostalo je jos samo da unesete vase podatke</p></div>
+                    <p>&ast;</p>
+                    <div class="col-12 p-1 poljeForme" id="divIme">
+                        <input type="text" id="ime" name="ime" placeholder="Vase ime (min. 3 karaktera)"/>
+                        <p></p>
+                    </div>
+                    <p>&ast;</p>
+                    <div class="col-12 p-1 poljeForme" id="divPrezime">
+                        <input type="text" id="prezime" name="prezime" placeholder="Vase prezime (min. 3 karaktera)"/>
+                        <p></p>
+                    </div>
+                    <p>&ast;</p>
+                    <div class="col-12 p-2 poljeForme" id="divEmail">
+                        <input type="email" id="email" name="email" placeholder="Vas mail"/>
+                        <p></p>
+                    </div>
+                    <div class="col-12 p-1">
+                        <input type="checkbox" id="hitno" name="hitno" value="10"/>
+                        <label for="hitno">Hitna isporuka (10% na ukupnu cenu)</label>
+                        <p></p>
+                    </div>
+                    <div class="col-12 p-1">
+                        <p>Izaberite kurirsku sluzbu:</p>
+                        <input type="radio" id="bex" name="kurir" value="355" checked/>
+                        <label "for="bex">BEX Express (355din)</label>
+                        <input type="radio" id="aks" name="kurir" value="305"/>
+                        <label for="bex">AKS Express (305din)</label>
+                        <p></p>
+                    </div>
+                    <p>&ast;</p>
+                    <div class="col-12 p-1 poljeForme">
+                        <input type="text" id="vasaAdresa" name="vasaAdresa" placeholder="Vasa adresa"/>
+                        <p></p>
+                    </div>
+                    <div class="col-12 p-2 poljeForme d-flex justify-content-center">
+                        <textarea id="napomena" name="napomena" rows="4" cols="35"  class="">Napomena (opciono)
+                        </textarea>
+
+                    </div>
+                    <div class="col-12">
+                        <p class="text-center">Ukupna cena iznosi: <span id="konacnaCena">5000 RSD</span></p>
+                        <br/>
+                        <div class="d-flex justify-content-center">
+                            <input type="button" id="zavrsiKupovinu" class="px-3" value="Zavrsi kupovinu"//>
+                    </div>
+
+                </form>
+
+
+            </div>
+        </section>    
+        <header>
+            <div class="container-xxl py-5">
+                <div class="row">
+                    <div class="col-4 col-sm-3 col-lg-3 d-flex justify-content-center " ID="logo"><a href="index.html"> <i class="fas fa-draw-polygon" id="logoFuter"></i></a></div>
+                    <div id="meni" class="col-6 col-lg-5 ">
+                        <ul class="d-flex justify-content-between">
+                            <li><a href ="index.html"/>Pocetna</a></li>
+                            <li class="aktivanMeni"><a href ="proizvodi.html"/>Proizvodi</a></li>
+                            <li id="oNama" class="relative">O nama<i class="fas fa-caret-down"></i>
+                                <div id="padajuciMeni">
+                                    <ul>
+                                        <li><a href="onama.html">O Kompaniji</a></li>
+                                        <li><a href="oautoru.html">O Autoru</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                </li>
+                        </ul>
+
+                    </div>
+                    <div id="korpa" class="col-3 offset-4 offset-sm-0 col-sm-2 d-flex justify-content-center">
+                        <div id="korpa">
+                            <i  class="fas fa-shopping-cart ikonicaKorpa"></i>
+                            <span id="brProizvodaUKorpi">0</span>
+                         
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div id="divZaKorpu" class="nevidljivo p-4">
+                            <p class="text-center">Vasa korpa je prazna</p>
+                        </div>
+                    </div>             
+                    <div id="hamburger" class="d-flex justify-content-center pb-2 w-100">
+                        <img src="assets/img/ham7.png" alt="slika menija"/>
+
+                    </div>  
+                    <div id="meniZaManjeRezolucije" class="justify-content-center">
+                        <ul>
+                            <li class="py-2"><a href="index.html">Pocetna</a></li>
+                            <li class="py-2"><a href="proizvodi.html">Proizvodi</a></li>
+                            <li id="oNama1" class="relative py-2">O nama<i class="fas fa-caret-down"></i>
+                                <div id="padajuciMeni1">
+                                    <ul>
+                                        <li class="py-2"><a href="onama.html">O Kompaniji</a></li>
+                                        <li class="py-2"><a href="oautoru.html">O Autoru</a></li>
+                                        
+                                    </ul>
+                                </div>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+        </header>
+        <main>
+            
+            <section id="prviDeo" class="p-5">
+                <div class="row">
+                    <div class="col-6" id="banerKojiNestaje">
+
+                    <img src="assets/img/baner4.jpg" class="figure-img w-100 rounded" alt="slika asortimana"/>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                    <img src="assets/img/baner5.jpg" class="figure-img w-100 rounded" alt="najlepse pice"/>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <div class="row justify-content-center pb-5">
+                    <div class="col-6-12 col-md-6">
+                        <h1 class="text-center">Nasi proizvodi:</h1>
+                    </div>
+                </div>
+            </div>
+
+
+            <section id="drugiDeo">
+                <div class="container">
+                    <h2 class="text-center p-5">-Kategorije-</h2>
+                    <div class="row d-flex justify-content-between pt-5">
+                        
+                        <div class="col-6 col-lg-3 kategorija" id="viski">
+                            <div class="d-flex justify-content-center mb-3"><img src="assets/img/viski.jpg" alt="rakija"/></div>
+                            <p class="text-center">Viski</p>
+                        </div>
+                        <div class="col-6 col-lg-3 kategorija" id="rakija">
+                            <div class="d-flex justify-content-center mb-3"><img src="assets/img/rakija.jpg" alt="rakija"/></div>
+                            <p class="text-center">Rakija</p>
+                        </div>
+                        <div class="col-6 col-lg-3 kategorija" id="rum">
+                            <div class="d-flex justify-content-center mb-3"><img src="assets/img/rum.jpg" alt="rum"/></div>
+                            <p class="text-center">Rum</p>
+                        </div>
+                        <div class="col-6 col-lg-3 kategorija" id="vino">
+                            <div class="d-flex justify-content-center mb-3"><img src="assets/img/vino.jpg" alt="viski"/></div>
+                            <p class="text-center">Vino</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row kategorija mb-3" id="sveKategorije">
+                            <div class="d-flex justify-content-center mb-3"><img src="assets/img/sve.jpg" alt="viski"/></div>
+                            <p class="text-center">Sve</p>
+                        
+                    </div>
+                </div>
+                <div class="container-md">
+                    <div class="d-flex justify-content-center pt-5 mb-3"id="filterCena">
+                        <input type="range" id="skalar" name="skalar" value="20000" step="1000"min="1000" max="20000" list="tickmarks" />
+                        
+                    
+                    </div>
+                    <div class="row">
+                        <div class="d-flex w-100 justify-content-center"><div id="merac1"><p>OD 0 din. &nbsp;&nbsp;&nbsp;</p></div><div id="merac2"><p> DO:20 000 </p></div></div>
+                        <p class="text-center">Odaberite raspon cene</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="text" id="tragac" placeholder="Pretrazite artikle po imenu"/>
+
+                            <ul id="listaPretrage">
+
+                            </ul></div>
+                    </div>
+                </div>
+            </section>
+            <section id="teciDeo">
+                <div id="najprodavanijiArtikli" class="pt-5 d-flex">                   
+                    <div class="container">
+                        <div class="row pb-5" id="sviArtikli">
+                            <!--Ovde se dinamicki ispisuju proizvodi-->
+                        </div>
+                    </div>                  
+                </div>
+            </section>
+            <br/><br/><br/>
+        </main>
+        <footer>
+            <div class="container pt-5">
+                <div id="navFooter" class="row d-flex justify-content-between">
+                    <div class="col-12 col-sm-4">
+                        <div class="d-flex justify-content-center mb-2"><a href="index.html"><i class="fas fa-draw-polygon" id="logoFuter"></i></a></div>
+                        <p class="text-center">Destilerija alkohola Dasic</p>
+                        <p class="text-center">Sva prava zadrzava Destilerija</p>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <div class="d-flex justify-content-center">
+                        <ul>
+                            <li>Linkovi:</li>
+                            <li><a href="index.html">Pocetna</a></li>
+                            <li><a href="proizvodi.html">Proizvodi</a></li>
+                            <li><a href="onama.html">O nama</a></li>
+                            <li><a href="oautoru.html">O autoru</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4">
+  
+                        <div class="d-flex justify-content-center">
+                            <ul>
+                                <li>Mapa sajta i RSS:</li>
+                                <li><a href="sitemap.xml">Mapa Sajta</a></li>
+                                <li><a href="feed.rss">RSS</a></li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-12p-1" id="podnozijeFutera">
+                    <p class="text-center">Dokumentacija o sajtu&nbsp;&nbsp;<a href="Dokumentacija.pdf"><i class="fas fa-file-alt"></i></a></p>
+                </div>
+            </div>
+        </footer>
+
+        <button id="skrol"><i class="fas fa-level-up-alt" id="strelica"></i></button>
+        <div id="obavestenjeOUnetomProizvoduUKorpu" class="nevidljivo">
+           <div class="d-flex justify-content-center"><i class="fas fa-check-circle"></i></div> 
+            <p>Proizvod je dodat u korpu</p>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="assets/js/main.js" type="text/javascript"></script>
+        <script src="https://kit.fontawesome.com/d97b95c4d1.js" crossorigin="anonymous"></script>
+
+    </body>
+</html>

@@ -1,0 +1,167 @@
+@media only screen and (max-width:1000px) {
+    header>.container-xxl{
+      padding: 0px !important;
+      padding-top: 30px !important;
+    }
+    #obrisiKorpu{
+        display: block;
+    }
+    #dugmeZaPorucivanje{
+        padding:2px;
+        font-size: 12px;
+        width: 100%;
+    }
+    #dugmeZaBrisanjeKorpe{
+        width: 100%;
+        padding: 2px;
+        font-size: 12px;
+    }
+    #forma{
+        width: 65%;
+    }
+    #sveKategorije>div>img{
+        width: 25%;
+    
+    }
+  }
+@media only screen and (max-width:800px) {
+    p{
+        padding-bottom: 4px;
+        font-size: 12px;
+    }
+    span{
+        font-size: 12px;
+    }
+    button>*{
+        font-size: 8px;
+    }
+    #forma{
+        width: 75%;
+    }
+    #forma>form>div>p{
+        margin-bottom: 0px;
+    }
+    .poljeForme>input, textarea{
+        padding: 3px;
+        font-size: 12px !important;
+    }
+    label{
+        font-size: 12px;
+        width: 100%;
+    }
+    /*Stranica op Autoru*/
+    #txtAutor>h2{
+        color:rgb(133, 6, 6);
+        font-size: 28px;
+    }
+    #txtAutor>p{
+        font-size: 20px;
+        
+    }
+    #responsSlikaAutor{
+        width: 90% !important;
+    }
+
+  }
+@media only screen and (max-width:579px) {
+    p{
+        padding-bottom: 4px;
+        font-size: 12px;
+    }
+    a{
+        font-size: 14px;
+    }
+    li{
+        font-size: 14px;
+    }
+    #prviDeo{
+        padding: 5px !important;
+        margin-top: 40px;
+    }
+    #banerKojiNestaje{
+        display: none !important;
+    }
+    .ikonicaKorpa{
+        font-size: 20px;
+    }
+    #divZaKorpu{
+        width:65% !important;
+        left:25%;
+    }
+    #brProizvodaUKorpi{
+        padding: 3px 7px;
+        top:-20px;
+        right: -20px;
+    }
+    #obrisiKorpu{
+        padding: 5px !important;
+    }
+    #meni{
+        display: none !important;
+    }
+    #hamburger{
+        display: flex !important;
+        
+    }
+    #prviDeo{
+        padding-bottom: 0px !important;
+    }
+    #drugiDeo>div>div{
+        padding-bottom: 0px !important;
+    }
+    #noviLokal>div>p{
+        font-size: 16px;
+    }
+    .manjFont{
+        font-size: 12px !important;
+    }
+    #iksic>i{
+        top:5px;
+        left:0px
+    }
+    #skalar{
+        width:85%;
+        background-color:coral;
+    }
+    .container>.pb-5{
+        padding-bottom: 0px !important;
+    }
+    .container>.pt-5{
+        padding-top:0 !important;
+    }
+}
+@media only screen and (max-width:424px) {
+    .kartica{
+        width: 100% !important;
+    }
+    #pogledajSveProizvode{
+        padding: 10px !important;
+    }
+    #drugiDeo>.container{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .onamaNoviLokal>p{
+        font-size: 12px !important;
+    }
+
+}
+@media only screen and (max-width:324px) {
+    #divZaKorpu{
+        width:80% !important;
+        left:10%;
+    }
+    #sveKategorije>div>img{
+        width: 40%;
+    
+    }
+    .kategorija>div>img{
+
+        width: 80%;
+
+    }
+
+
+
+}

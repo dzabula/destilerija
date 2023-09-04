@@ -1,0 +1,4 @@
+user-agent: *
+Disallow:/admin/
+
+Sitemap: https://destilerija.000webhostapp.com/sitemap.xml
